@@ -1,0 +1,1920 @@
+@font-face {
+	font-family: "Wix Madefor Display";
+	font-weight: 700;
+	src: url("./../media/fonts/WixMadeforDisplay-Bold.ttf");
+}
+@font-face {
+	font-family: "Wix Madefor Display";
+	font-weight: 400;
+	src: url("./../media/fonts/WixMadeforDisplay-Regular.ttf");
+}
+@font-face {
+	font-family: "Wix Madefor Display";
+	font-weight: 500;
+	src: url("./../media/fonts/WixMadeforDisplay-Medium.ttf");
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+body,
+html {
+	font-size: 0.0714285714vw;
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+@media (max-width: 768px) {
+	body,
+	html {
+		font-size: calc(100vw / 380);
+		max-width: 100vw;
+		overflow-x: hidden;
+	}
+}
+.container {
+	width: 1272rem;
+	margin: 0 64rem;
+}
+@media (max-width: 768px) {
+	.container {
+		max-width: 100%;
+		width: auto;
+		margin: 0 20rem;
+	}
+}
+button,
+.closePopups {
+	cursor: pointer;
+}
+
+.header {
+	border-bottom: 1rem solid rgba(255, 255, 255, 0.1);
+	padding: 0;
+	width: 1400rem;
+	height: 64rem;
+	-webkit-backdrop-filter: blur(100rem);
+	backdrop-filter: blur(100rem);
+	background: #08060c;
+	width: 100vw;
+	position: fixed;
+	z-index: 9;
+}
+.header .container {
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+	align-items: center;
+}
+.header.white {
+	background: white;
+}
+.header.white .header-logo {
+	filter: grayscale(100%) invert(100%);
+}
+.header.white .header-menu__list__item {
+	color: black;
+}
+.header.white .header-menu__list__item:hover {
+	color: white;
+}
+.header.white .header-city__item {
+	color: black;
+}
+.header.white .header-mail {
+	color: black;
+}
+.header.white .header-nums__item {
+	color: black;
+}
+
+.header-logo {
+	width: 155rem;
+	height: 35rem;
+}
+
+.header-menu {
+	height: 100%;
+}
+
+.header-menu__list {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	-moz-column-gap: 24rem;
+	column-gap: 24rem;
+	height: 100%;
+}
+
+.header-menu__list__item {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 12rem;
+	color: #fff;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 14rem;
+	transition: all 0.4s ease;
+}
+.header-menu__list__item:hover {
+	background: #8c3ded;
+}
+
+.header-contacts {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.header-mail {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 12rem;
+	color: #fff;
+	margin-right: 16rem;
+}
+
+.header-city {
+	background: rgba(183, 186, 214, 0.12);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 0 16rem;
+}
+
+.header-city__item {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 12rem;
+	color: #fff;
+}
+
+.header-nums {
+	margin-left: 16rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.header-nums__item {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 16rem;
+	color: #fff;
+}
+
+.fron-block {
+	height: 720rem;
+	position: relative;
+	background: #010101;
+	top: 0;
+}
+.fron-block .container {
+	height: 100%;
+	position: relative;
+	z-index: 2;
+}
+
+.front-heading {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 700;
+	font-size: 56rem;
+	line-height: 128%;
+	text-transform: uppercase;
+	color: #fff;
+	padding-top: 238rem;
+}
+
+.front-block__bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+}
+
+.pluss {
+	padding: 80rem 0;
+	background: linear-gradient(180deg, #010101 0%, #140923 100%);
+}
+.pluss .container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 36rem;
+	justify-content: center;
+}
+
+.pluss-item {
+	border: 1rem solid rgba(255, 255, 255, 0.11);
+	border-radius: 8rem;
+	padding: 24rem 22rem;
+	width: 312rem;
+	height: 250rem;
+	background: linear-gradient(180deg, rgba(82, 56, 153, 0) 0%, rgba(137, 93, 255, 0.2) 100%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.pluss-item__svg {
+	width: 38rem;
+	height: 38rem;
+	background: #8c3ded;
+	border-radius: 100rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20rem;
+}
+
+.pluss-item__svg__img {
+	height: 18rem;
+}
+
+.pluss-item__text {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 16rem;
+	color: #fff;
+}
+
+.staj {
+	background: linear-gradient(180deg, #140923 0%, #010101 100%);
+	padding: 80rem 0;
+}
+.staj-top {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 120rem;
+}
+
+.staj-top-item {
+	border: 1rem solid rgba(255, 255, 255, 0.1);
+	padding: 30rem 31rem;
+	width: 410rem;
+	height: 172rem;
+}
+
+.staj-top-item__svg {
+	width: 31rem;
+	height: 31rem;
+	margin-bottom: 36rem;
+}
+
+.staj-top-item__text {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 20rem;
+	color: #fff;
+}
+
+.staj-btm {
+	display: flex;
+	justify-content: space-between;
+}
+
+.staj-btm-item {
+	width: 234rem;
+	height: 144rem;
+}
+
+.staj-btm-item__top {
+	border-bottom: 1rem solid rgba(255, 255, 255, 0.1);
+	padding-bottom: 20rem;
+	margin-bottom: 20rem;
+	display: flex;
+	align-items: flex-start;
+}
+
+.staj-btm-item__top__top-text {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	color: #fff;
+	font-size: 54rem;
+}
+.staj-btm-item__top__top-text span {
+	font-size: 16rem;
+}
+
+.staj-btm-item__top__low-text {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 16rem;
+	color: #fff;
+}
+
+.staj-btm-item__btm__text {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 14rem;
+	color: #fff;
+}
+
+.deals {
+	padding: 80rem 0 100rem;
+	background: linear-gradient(180deg, #010101 0%, #140923 100%);
+	position: relative;
+	overflow: hidden;
+}
+.deals .container {
+	position: relative;
+	z-index: 3;
+}
+.deals::after {
+	content: "";
+	display: block;
+	width: 600rem;
+	height: 600rem;
+	background: #8358ff;
+	bottom: -300rem;
+	right: -180rem;
+	border-radius: 100%;
+	position: absolute;
+	z-index: 1;
+	filter: blur(325.3999938965rem);
+}
+
+.deals-heading {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 28rem;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 54rem;
+}
+
+.deals-list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 8rem;
+	margin-bottom: 24rem;
+}
+
+.deals-list-item {
+	width: -moz-fit-content;
+	width: fit-content;
+	border-bottom: 1rem solid rgba(255, 255, 255, 0.1);
+	transition: all 0.4s ease;
+}
+.deals-list-item:hover {
+	border-bottom: 1rem solid white;
+}
+
+.deals-list-item-href {
+	padding: 10rem;
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 16rem;
+	color: #fff;
+	display: block;
+}
+.deals-list-item-href span {
+	margin-right: 10rem;
+}
+
+.deals-all-deal {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 14rem;
+	text-decoration: underline;
+	-webkit-text-decoration-skip-ink: none;
+	text-decoration-skip-ink: none;
+	color: #fff;
+}
+
+.deals-wooman {
+	position: absolute;
+	top: 0;
+	right: 13rem;
+	height: 100%;
+	z-index: 2;
+}
+
+.deals-dirr {
+	position: absolute;
+	right: 0;
+	bottom: -32rem;
+	border-radius: 7rem;
+	padding: 16rem;
+	-webkit-backdrop-filter: blur(26rem);
+	backdrop-filter: blur(26rem);
+	background: linear-gradient(180deg, rgba(84, 44, 103, 0.73) 0%, rgba(84, 44, 103, 0.73) 100%);
+}
+
+.deals-dirr-name {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 20rem;
+	line-height: 100%;
+	letter-spacing: -0.01em;
+	color: rgba(255, 255, 255, 0.88);
+	margin-bottom: 12rem;
+}
+
+.deals-dirr-dol {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 14rem;
+	line-height: 100%;
+	letter-spacing: -0.01em;
+	color: rgba(255, 255, 255, 0.88);
+}
+
+.arguments {
+	padding: 80rem 0 60rem;
+	background: #f8f8f8;
+	border-bottom: 1rem solid rgba(0, 0, 0, 0.05);
+}
+.arguments .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.arg-heading {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 500;
+	font-size: 32rem;
+	text-transform: uppercase;
+	text-align: center;
+	color: #000;
+	margin-bottom: 50rem;
+}
+.arg-heading span {
+	font-size: 28rem;
+}
+
+.arg-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 28rem;
+}
+
+.arg-item {
+	padding: 20rem 20rem 30rem 20rem;
+	width: 338rem;
+	height: 252rem;
+	background: #fff;
+}
+
+.arg-item__num {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 14rem;
+	color: rgba(140, 61, 237, 0.5);
+	border: 1rem solid rgba(140, 61, 237, 0.5);
+	border-radius: 40rem;
+	width: 39rem;
+	height: 50rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 19rem;
+}
+
+.arg-item__heading {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 16rem;
+	color: #000;
+	margin-bottom: 19rem;
+}
+
+.arg-item__text {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 14rem;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.keys {
+	padding: 80rem 0;
+	background: #f8f8f8;
+}
+.keys-heading {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 500;
+	font-size: 28rem;
+	text-transform: uppercase;
+	color: #000;
+	margin-bottom: 50rem;
+}
+
+.keys-wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 626rem);
+	gap: 20rem;
+}
+
+.keys-item {
+	border: 1rem solid rgba(0, 0, 0, 0.05);
+	background: #fff;
+	max-height: 0;
+	overflow: hidden;
+	transition: all 0.4s ease;
+}
+.keys-item.active {
+	padding: 30rem 38rem;
+	max-height: 500rem;
+}
+
+.keys-item-zad {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 14rem;
+	color: #9f9f9f;
+	margin-bottom: 16rem;
+}
+
+.keys-item-zad-text {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 14rem;
+	color: #000;
+	margin-bottom: 20rem;
+}
+
+.keys-item-button {
+	margin-top: 32rem;
+	border-radius: 47rem;
+	padding: 8rem 20rem;
+	width: 226rem;
+	height: 34rem;
+	background: #8c3ded;
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 500;
+	font-size: 14rem;
+	color: #fff;
+}
+
+.keys-all-text {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 40rem;
+	max-height: 0;
+	overflow: hidden;
+	transition: all 0.4s ease;
+}
+.keys-all-text.active {
+	display: flex;
+	max-height: 50rem;
+}
+
+.keys-all-keys-btn {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 14rem;
+	text-decoration: underline;
+	-webkit-text-decoration-skip-ink: none;
+	text-decoration-skip-ink: none;
+	color: #000;
+	cursor: pointer;
+}
+
+.rews {
+	padding: 80rem 0;
+}
+
+.rew-heading {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 500;
+	font-size: 28rem;
+	text-transform: uppercase;
+	color: #000;
+	margin-bottom: 45rem;
+	width: 782rem;
+}
+
+.rew-slide {
+	box-shadow: 0 12rem 20rem 0 rgba(0, 0, 0, 0.04);
+	background: #f8f8f8;
+	border: 1rem solid rgba(0, 0, 0, 0.05);
+	height: 377rem;
+}
+
+.rew-slide-top {
+	padding: 30rem 38rem;
+}
+
+.rew-slide-kav {
+	width: 62rem;
+	height: 54rem;
+	margin-bottom: 52rem;
+}
+.rew-slide-kav path {
+	fill: #f0eaf8;
+}
+
+.rew-slide-top-text {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 14rem;
+	color: #000;
+}
+
+.rew-slide-btm {
+	background: #fff;
+	padding: 28rem 38rem;
+	display: flex;
+	align-items: center;
+	widows: 100%;
+	justify-content: space-between;
+}
+
+.rew-slide-name {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 600;
+	font-size: 18rem;
+	color: #000;
+	margin-bottom: 6rem;
+}
+
+.rew-slide-roll {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 12rem;
+	color: #8c3ded;
+}
+
+.rew-slide-original {
+	border-radius: 47rem;
+	padding: 8rem 20rem;
+	width: 177rem;
+	height: 34rem;
+	background: #8c3ded;
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 500;
+	font-size: 14rem;
+	color: #fff;
+}
+
+.rews-arrows {
+	display: flex;
+	justify-content: flex-end;
+	-moz-column-gap: 12rem;
+	column-gap: 12rem;
+	margin-top: 45rem;
+}
+
+.rew-arrow-prev {
+	width: 38rem;
+	height: 38rem;
+	border-radius: 100%;
+	background: #8c3ded;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.4s ease;
+	cursor: pointer;
+}
+.rew-arrow-prev.swiper-button-disabled {
+	background: white;
+	border: 1rem solid #8c3ded;
+}
+.rew-arrow-prev.swiper-button-disabled .rew-arrows-svg path {
+	fill: #8c3ded;
+}
+.rew-arrow-prev .rew-arrows-svg {
+	width: 19rem;
+	height: 16rem;
+	transition: all 0.4s ease;
+}
+.rew-arrow-prev .rew-arrows-svg path {
+	fill: white;
+	transition: all 0.4s ease;
+}
+
+.rew-arrow-next {
+	width: 38rem;
+	height: 38rem;
+	border-radius: 100%;
+	background: #8c3ded;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.4s ease;
+	cursor: pointer;
+}
+.rew-arrow-next.swiper-button-disabled {
+	background: white;
+	border: 1rem solid #8c3ded;
+}
+.rew-arrow-next.swiper-button-disabled .rew-arrows-svg path {
+	fill: #8c3ded;
+}
+.rew-arrow-next .rew-arrows-svg {
+	transform: rotate(180deg);
+	width: 19rem;
+	height: 16rem;
+	transition: all 0.4s ease;
+}
+.rew-arrow-next .rew-arrows-svg path {
+	fill: white;
+	transition: all 0.4s ease;
+}
+
+.rew-popup {
+	border: 1rem solid rgba(0, 0, 0, 0.05);
+	border-radius: 18rem;
+	padding: 30rem 38rem;
+	max-width: 90vw;
+	max-height: 90vh;
+	background: #fff;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	z-index: 12;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.4s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.rew-popup.active {
+	transform: translate(-50%, -50%);
+	opacity: 1;
+	visibility: visible;
+}
+
+.rew-popup-close {
+	position: absolute;
+	width: 20rem;
+	height: 20rem;
+	right: 15rem;
+	top: 15rem;
+}
+
+.rew-popup-img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.closePopups {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 11;
+	-webkit-backdrop-filter: blur(12.1121559143rem);
+	backdrop-filter: blur(12.1121559143rem);
+	background: rgba(0, 0, 0, 0.32);
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(-30%);
+	transition: all 0.4s ease;
+}
+.closePopups.active {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
+.begustrok {
+	padding: 0 0 80rem 0;
+	background: #fff;
+}
+
+.begustrok-heading {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 500;
+	font-size: 28rem;
+	text-transform: uppercase;
+	color: #000;
+	margin-bottom: 40rem;
+}
+
+.begustrok-wrapper {
+	width: 100vw;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	-moz-column-gap: 40rem;
+	column-gap: 40rem;
+}
+
+.begustrok-line {
+	display: flex;
+	-moz-column-gap: 40rem;
+	column-gap: 40rem;
+	animation: beguStrok 20s linear infinite;
+	align-items: center;
+}
+
+.begustrok-img {
+	height: 52rem;
+}
+
+.begu-str-row {
+	display: flex;
+	justify-content: center;
+	margin-top: 72rem;
+}
+
+.begu-strok-btn {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 500;
+	font-size: 16rem;
+	text-align: center;
+	color: white;
+	border-radius: 47rem;
+	padding: 10rem 20rem;
+	width: 316rem;
+	height: 48rem;
+	background: #8c3ded;
+}
+
+@keyframes beguStrok {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+.support {
+	padding: 60rem 0;
+	background: linear-gradient(180deg, #140923 0%, #10121c 100%);
+}
+.support .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.support-left {
+	width: 516rem;
+	padding: 30rem 0 55rem;
+}
+
+.support-left-heading {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 500;
+	font-size: 28rem;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 40rem;
+}
+
+.support-list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	row-gap: 24rem;
+}
+
+.support-list__item {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 14rem;
+	color: #fff;
+	position: relative;
+}
+.support-list__item::before {
+	content: "";
+	display: block;
+	width: 35rem;
+	background: #8c3ded;
+	height: 2rem;
+	margin-bottom: 15rem;
+}
+
+.support-right {
+	padding: 0rem 32rem;
+	width: 616rem;
+	height: 421rem;
+	background: #8c3ded;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.support-right__svg {
+	position: absolute;
+	right: 7rem;
+	top: 0;
+	height: 100%;
+}
+
+.support-right__heading {
+	position: relative;
+	z-index: 2;
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 500;
+	font-size: 16rem;
+	color: #fff;
+	width: 295rem;
+	margin-bottom: 40rem;
+}
+.support-right__heading span {
+	font-weight: 400;
+}
+
+.support-right-button {
+	position: relative;
+	z-index: 2;
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 500;
+	font-size: 14rem;
+	text-align: center;
+	color: #0d0d0d;
+	border-radius: 56rem;
+	padding: 20rem 29rem;
+	background: #fff;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+.contacts-top {
+	padding: 60rem 0;
+	background: linear-gradient(180deg, #10121c 0%, #140923 100%);
+	position: relative;
+	overflow: hidden;
+}
+.contacts-top .container {
+	display: flex;
+	justify-content: space-between;
+	border: 1rem solid rgba(255, 255, 255, 0.1);
+	padding: 30rem 31rem;
+}
+.contacts-top::after {
+	content: "";
+	display: block;
+	width: 300rem;
+	height: 300rem;
+	top: -151rem;
+	left: -250rem;
+	border-radius: 100%;
+	background: #8358ff;
+	filter: blur(233.3000030518rem);
+	position: absolute;
+}
+
+.contacts-top-left {
+	width: 628rem;
+}
+
+.contacts-top-left-heading {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 500;
+	font-size: 28rem;
+	text-transform: uppercase;
+	color: white;
+	margin-bottom: 52rem;
+}
+
+.contacts-top-left-buttons {
+	display: flex;
+	-moz-column-gap: 14rem;
+	column-gap: 14rem;
+}
+
+.contacts-top-left-btn {
+	border: 0.83rem solid #8c3ded;
+	border-radius: 47rem;
+	padding: 10rem 20rem;
+	display: flex;
+	align-items: center;
+	-moz-column-gap: 8rem;
+	column-gap: 8rem;
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 14rem;
+	letter-spacing: -0.01em;
+	text-align: center;
+	color: white;
+}
+
+.contacts-top-left-svg {
+	width: 22rem;
+	height: 22rem;
+}
+
+.contacts-top-right {
+	display: flex;
+	-moz-column-gap: 20rem;
+	column-gap: 20rem;
+}
+
+.contacts-top-phone {
+	border: 1rem solid rgba(255, 255, 255, 0.1);
+	padding: 18rem;
+	width: 178rem;
+	height: 170rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.contacts-top-phone-svg {
+	width: 20rem;
+	height: 20rem;
+	flex-shrink: 0;
+}
+
+.contacts-top-phone-text {
+	display: flex;
+	flex-direction: column;
+	row-gap: 4rem;
+}
+
+.contacts-top-phone-heading {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 12rem;
+	letter-spacing: -0.01em;
+	color: #8a8a8a;
+}
+
+.contacts-top-phone-num {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 500;
+	font-size: 16rem;
+	color: white;
+}
+
+.contacts-btn {
+	background: linear-gradient(180deg, #140923 0%, #000 100%);
+	overflow: hidden;
+}
+.contacts-btn .container {
+	padding: 32rem 0;
+	position: relative;
+}
+
+.contacts-btn-info {
+	-webkit-backdrop-filter: blur(36.6666641235rem);
+	backdrop-filter: blur(36.6666641235rem);
+	background: rgba(18, 18, 18, 0.81);
+	padding: 26rem;
+	width: 456rem;
+	position: relative;
+	z-index: 2;
+}
+
+.contacts-btn-info__heading {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 500;
+	font-size: 28rem;
+	text-transform: uppercase;
+	color: white;
+	margin-bottom: 20rem;
+}
+
+.contacts-btm-list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	row-gap: 6rem;
+	margin-bottom: 12rem;
+}
+
+.contacts-btm-list__item {
+	display: flex;
+	align-items: center;
+	-moz-column-gap: 8rem;
+	column-gap: 8rem;
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 14rem;
+	color: white;
+}
+
+.contacts-btm-list__item__svg {
+	width: 24rem;
+	height: 24rem;
+}
+
+.how-fing {
+	border: 0.83rem solid #8c3ded;
+	border-radius: 47rem;
+	padding: 8rem 16rem;
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 12rem;
+	letter-spacing: -0.01em;
+	text-align: center;
+	color: white;
+	background: none;
+	margin-bottom: 40rem;
+}
+
+.contacts-btm-info-sub-text {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 14rem;
+	color: #7b7b7b;
+	margin-top: 8rem;
+}
+
+.contacts-btm-bg {
+	position: absolute;
+	top: 60rem;
+	left: 0;
+	width: 100%;
+}
+
+.footer {
+	background: #000;
+	padding: 60rem 0;
+}
+.footer .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-right {
+	display: flex;
+}
+
+.footer-logo {
+	margin-right: 60rem;
+	width: 146rem;
+	height: 26rem;
+}
+
+.footer-list {
+	margin-right: 73rem;
+	display: flex;
+	flex-direction: column;
+	row-gap: 21rem;
+}
+.footer-list:last-child {
+	margin-right: 0;
+}
+
+.footer-list-item {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 12rem;
+	color: white;
+}
+
+.footer-left {
+	display: flex;
+}
+
+.footer-info {
+	margin-right: 16rem;
+}
+
+.footer-info-text {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 14rem;
+	color: white;
+	margin-bottom: 16rem;
+}
+
+.footer-info-sub-text {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 12rem;
+	color: white;
+	margin-bottom: 6rem;
+	line-height: 100%;
+}
+.footer-info-sub-text:last-child {
+	margin-bottom: 0;
+}
+
+.footer-phone {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 14rem;
+	color: white;
+	margin-bottom: 4rem;
+	display: block;
+}
+
+.footer-contacts-icons {
+	display: flex;
+	-moz-column-gap: 12rem;
+	column-gap: 12rem;
+	margin-top: 20rem;
+}
+
+.footer-icon-href {
+	width: 24rem;
+	height: 24rem;
+	display: block;
+	position: relative;
+}
+
+.footer-icon-svg {
+	width: 100%;
+	height: 100%;
+}
+
+.form-popup,
+.big-form-popup {
+	border: 1rem solid rgba(0, 0, 0, 0.05);
+	border-radius: 14rem;
+	padding: 30rem 38rem;
+	width: 526rem;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 12;
+	background: white;
+	transition: all 0.4s ease;
+	transform: translate(-50%, -100%);
+	opacity: 0;
+	visibility: hidden;
+}
+.form-popup.active,
+.big-form-popup.active {
+	transform: translate(-50%, -50%);
+	opacity: 1;
+	visibility: visible;
+}
+
+.form-popup-close {
+	position: absolute;
+	width: 32rem;
+	height: 32rem;
+	top: 11rem;
+	right: 11rem;
+}
+
+.big-form-popup .form-popup-heading {
+	margin-bottom: 12rem;
+}
+.big-form-popup .form-popup-text {
+	margin-bottom: 36rem;
+}
+
+.form-popup-heading {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 20rem;
+	color: black;
+	margin-bottom: 36rem;
+}
+
+.form-popup-text {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 14rem;
+	color: #000;
+}
+
+.form-popup-inp {
+	border: 1rem solid #b7b7b7;
+	padding: 10rem 20rem;
+	width: 450rem;
+	height: 44rem;
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 300;
+	font-size: 14rem;
+	line-height: 140%;
+	color: rgba(0, 0, 0, 0.5);
+	background: none;
+	margin-bottom: 12rem;
+}
+
+.form-popup-send {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 14rem;
+	letter-spacing: -0.01em;
+	text-align: center;
+	color: white;
+	border-radius: 47rem;
+	padding: 10rem 20rem;
+	width: 450rem;
+	height: 40rem;
+	background: #8c3ded;
+	margin-top: 24rem;
+}
+
+.finde-us-popup {
+	border: 1rem solid rgba(0, 0, 0, 0.05);
+	border-radius: 18rem;
+	padding: 30rem 38rem;
+	width: 816rem;
+	background: white;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 12;
+	transition: all 0.4s ease;
+	transform: translate(-50%, -100%);
+	opacity: 0;
+	visibility: hidden;
+}
+.finde-us-popup.active {
+	transform: translate(-50%, -50%);
+	opacity: 1;
+	visibility: visible;
+}
+
+.finde-us-popup-close {
+	width: 32rem;
+	height: 32rem;
+	top: 11rem;
+	right: 11rem;
+	position: absolute;
+}
+
+.finde-us-popup-heading {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 20rem;
+	color: black;
+	margin-bottom: 16rem;
+}
+
+.finde-us-popup-text {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 14rem;
+	color: #000;
+	margin-bottom: 36rem;
+	width: 484rem;
+}
+
+.finde-us-popup-wrapper {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.finde-us-popup-map {
+	width: 360rem;
+	height: 328rem;
+}
+
+.finde-us-popup-imgs {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: 360rem;
+	height: 328rem;
+	gap: 12rem;
+}
+
+.finde-us-popup-img-top {
+	width: 100%;
+}
+
+.finde-us-popup-img-btn {
+	grid-column: span 2;
+	width: 100%;
+}
+
+.closePopupsBtn {
+	cursor: pointer;
+}
+
+.about-us-top {
+	padding-top: 124rem;
+	padding-bottom: 80rem;
+}
+.about-top {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 45rem;
+}
+
+.about-heading {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 500;
+	font-size: 38rem;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.about-top-text-block {
+	padding: 19rem 24rem;
+	width: 524rem;
+	height: 93rem;
+	background: #f8f8f8;
+}
+
+.about-top-text {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 16rem;
+	color: #000;
+}
+.about-top-text::before {
+	content: "";
+	display: block;
+	width: 35rem;
+	height: 1rem;
+	background: #8c3ded;
+	margin-bottom: 14rem;
+}
+
+.about-wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 524rem);
+	justify-content: space-between;
+	row-gap: 25rem;
+}
+
+.about-wrapper-text {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 14rem;
+	line-height: 140%;
+	color: #000;
+}
+
+.sample-text {
+	background: #10121c;
+	padding: 80rem 0;
+}
+
+.sampe-heading {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 500;
+	font-size: 28rem;
+	text-transform: uppercase;
+	color: white;
+	width: 925rem;
+	margin-bottom: 23rem;
+}
+
+.sample-text-texst {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 16rem;
+	color: white;
+	width: 461rem;
+}
+
+.about-team {
+	background: #10121c;
+	padding: 60rem 0;
+}
+.about-team .container {
+	display: grid;
+	grid-template-columns: repeat(3, 344rem);
+	justify-content: space-between;
+	row-gap: 80rem;
+}
+
+.about-team-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.about-team-item:nth-child(3n + 1)::after {
+	content: "";
+	display: block;
+	width: 350rem;
+	height: 350rem;
+	border-radius: 100%;
+	filter: blur(325.3999938965rem);
+	position: absolute;
+	right: 0;
+	z-index: 1;
+}
+.about-team-item:nth-child(3n) {
+	z-index: 3;
+}
+.about-team-item:nth-child(3n) .about-team-item__info::after {
+	display: none;
+}
+.about-team-item:nth-child(3n + 2) {
+	z-index: 3;
+}
+.about-team-item:nth-child(3n + 2) .about-team-item__info::after {
+	display: none;
+}
+
+.about-team-item-img {
+	width: 344rem;
+	height: 468rem;
+}
+
+.about-team-item__info {
+	padding: 60rem 0;
+	background: white;
+	height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.about-team-item__info::after {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 200vw;
+	left: -100vw;
+	top: 0;
+	background: white;
+	z-index: 1;
+}
+
+.about-item-opit {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	gap: 4rem;
+	margin-bottom: 20rem;
+	position: relative;
+	z-index: 2;
+}
+
+.about-item-opit-item {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 11rem;
+	color: #4e3560;
+	border-radius: 38rem;
+	padding: 4rem 8rem;
+	height: 22rem;
+	background: #eee0ff;
+}
+
+.about-item-info {
+	margin-bottom: 40rem;
+	position: relative;
+	z-index: 2;
+}
+
+.about-item-info-name {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 20rem;
+	color: #000;
+	margin-bottom: 12rem;
+}
+
+.about-item-info-dol {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 16rem;
+	color: #000;
+}
+
+.about-item-info-list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	row-gap: 16rem;
+	margin-bottom: 40rem;
+	position: relative;
+	z-index: 2;
+}
+
+.about-item-info-list__item {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 14rem;
+	color: #707070;
+}
+.about-item-info-list__item::before {
+	content: "";
+	display: block;
+	width: 35rem;
+	height: 1rem;
+	margin-bottom: 12rem;
+	background: #8c3ded;
+}
+
+.about-item-buttons {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	row-gap: 8rem;
+	position: relative;
+	z-index: 2;
+}
+
+.about-item-wp {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 14rem;
+	letter-spacing: -0.01em;
+	text-align: center;
+	color: white;
+	display: flex;
+	align-items: center;
+	border-radius: 47rem;
+	padding: 10rem 20rem;
+	height: 40rem;
+	width: 100%;
+	background: #8c3ded;
+	justify-content: center;
+}
+
+.about-item-wp-svg {
+	width: 22rem;
+	height: 22rem;
+	margin-left: 12rem;
+}
+
+.about-item-popup {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 14rem;
+	letter-spacing: -0.01em;
+	text-align: center;
+	color: #8c3ded;
+	border: 0.83rem solid #8c3ded;
+	border-radius: 47rem;
+	padding: 10rem 20rem;
+	width: 344rem;
+	height: 40rem;
+	cursor: pointer;
+	background: none;
+}
+
+.single-deal__heading {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 500;
+	font-size: 38rem;
+	text-transform: uppercase;
+	color: #000;
+	margin-bottom: 38rem;
+}
+
+.deal-top-btn {
+	border-radius: 47rem;
+	padding: 10rem 24rem;
+	width: 315rem;
+	height: 48rem;
+	background: #8c3ded;
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 500;
+	font-size: 16rem;
+	text-align: center;
+	color: white;
+	margin-top: 38rem;
+}
+
+.singl-deal .about-top-text-block {
+	width: 606rem;
+}
+
+.single-deal .deals-list {
+	max-width: 604rem;
+}
+.single-deal.pluss {
+	background: linear-gradient(180deg, #010101 0%, #140923 100%), linear-gradient(180deg, #140923 0%, #10121c 100%);
+}
+.single-deal.pluss .container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+.single-deal .pluss-item {
+	width: 100%;
+}
+.single-deal .pluss-deal-heading {
+	margin-bottom: 20rem;
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 20rem;
+	color: white;
+}
+.single-deal.sample-text {
+	background: #010101;
+}
+
+.front-block-thing {
+	position: absolute;
+	width: 840rem;
+	height: 560rem;
+	top: 120rem;
+	right: -90rem;
+} /*# sourceMappingURL=style.css.map */
+
+/* blog start  */
+.blog {
+	padding-top: 124rem;
+	padding-bottom: 80rem;
+}
+.blog__tab {
+	display: flex;
+	gap: 52rem;
+	position: relative;
+	padding-bottom: 24rem;
+	border-bottom: 3rem solid #dde0e9;
+}
+.blog__tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 500;
+	font-size: 24rem;
+	line-height: 100%;
+	color: rgba(0, 0, 0, 0.8);
+	transition: 0.3s;
+}
+.blog__tab button:hover {
+	color: #8c3ded;
+}
+.blog__tab button.active {
+	color: #8c3ded;
+}
+.indicator {
+	position: absolute;
+	bottom: -3rem;
+	height: 3rem;
+	background-color: #8c3ded;
+	border-radius: 50rem;
+	transition:
+		left 0.3s ease,
+		width 0.3s ease;
+}
+.blog__tabcontent {
+	display: none;
+	padding-top: 38rem;
+}
+.blog__tabcontent.active {
+	display: block;
+}
+.blog__tabcontent__wrap {
+	gap: 8rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+.blog__item {
+	width: calc(25% - 6rem);
+
+	background: #f8f8f8;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	max-height: 0;
+	overflow: hidden;
+	transition: all 0.4s ease;
+}
+.blog__item.active {
+	padding: 20rem 24rem;
+	max-height: 500rem;
+}
+.blog__item__date {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 12rem;
+	color: #000;
+	padding-bottom: 14rem;
+}
+.blog__item__name {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 500;
+	font-size: 14rem;
+	line-height: 129%;
+	color: #000;
+	padding-bottom: 14rem;
+}
+.blog__item__text {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 12rem;
+	color: #000;
+	margin-bottom: 18rem;
+
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-height: 60rem;
+}
+.blog__item__link {
+	display: block;
+	border-radius: 50rem;
+	padding: 9.5rem 16rem;
+	background: #8c3ded;
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 500;
+	font-size: 12rem;
+	text-align: center;
+	color: var(--surface);
+	color: #fff;
+}
+.blog__item .line {
+	width: 35rem;
+	border-top: 1rem solid #8c3ded;
+	margin-bottom: 14rem;
+}
+.blog__more-btn {
+	margin-top: 45rem;
+	display: flex;
+	justify-content: center;
+	max-height: 0;
+	overflow: hidden;
+}
+.blog__more-btn.active {
+	max-height: 50rem;
+}
+.blog__more-btn p {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 14rem;
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+	color: #000;
+	cursor: pointer;
+}
+@media (max-width: 768px) {
+	.blog {
+		padding-top: 92rem;
+		padding-bottom: 47rem;
+	}
+	.blog__tab {
+		display: flex;
+		gap: 24rem;
+		position: relative;
+		padding-bottom: 24rem;
+		border-bottom: 3rem solid #dde0e9;
+	}
+	.blog__tab button {
+		font-size: 16rem;
+	}
+	.blog__tabcontent {
+		padding-top: 40rem;
+	}
+	.blog__tabcontent__wrap {
+		gap: 8rem;
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: column;
+	}
+	.blog__item {
+		width: 100%;
+	}
+	.blog__more-btn {
+		margin-top: 40rem;
+	}
+}
+/* blog end  */
+
+/* blog-article start  */
+.blog-article {
+	padding-top: 124rem;
+	padding-bottom: 80rem;
+}
+.blog-article .container {
+	margin: 0 auto;
+	width: 880rem;
+}
+.blog-article__date {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 12rem;
+	color: #000;
+	padding-bottom: 40rem;
+}
+.blog-article__name {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 500;
+	font-size: 24rem;
+	line-height: 100%;
+	color: #000;
+	padding-bottom: 28rem;
+}
+.blog-article__content p {
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 14rem;
+	color: #000;
+	margin: 12rem 0;
+}
+.blog-article__content p.font-size {
+	font-size: 20rem;
+	margin-top: 30rem;
+}
+@media (max-width: 768px) {
+	.blog-article {
+		padding-top: 92rem;
+		padding-bottom: 47rem;
+	}
+	.blog-article .container {
+		margin: 0 20rem;
+		width: auto;
+	}
+	.blog-article__date {
+		padding-bottom: 32rem;
+	}
+	.blog-article__name {
+		font-size: 20rem;
+		padding-bottom: 20rem;
+	}
+	.blog-article__content p.font-size {
+		font-size: 16rem;
+		margin-top: 32rem;
+	}
+}
+/* blog-article end  */
