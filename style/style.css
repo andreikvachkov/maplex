@@ -1863,7 +1863,7 @@ button,
 
 /* blog-article start  */
 .blog-article {
-	padding-top: 124rem;
+	padding-top: 20rem;
 	padding-bottom: 80rem;
 }
 .blog-article .container {
@@ -1896,9 +1896,43 @@ button,
 	font-size: 20rem;
 	margin-top: 30rem;
 }
+
+.breadcrumbs {
+	padding-top: 124rem;
+	padding-bottom: 20rem;
+}
+.breadcrumbs .container {
+	margin: 0 auto;
+	width: 880rem;
+}
+.breadcrumbs ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+.breadcrumbs li {
+	position: relative;
+	margin-right: 2rem;
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 12rem;
+	color: #000;
+}
+.breadcrumbs li + li::before {
+	content: "/";
+	margin-right: 1rem;
+	color: rgba(0, 0, 0, 0.5);
+}
+.breadcrumbs a {
+	text-decoration: none;
+	font-family: "Wix Madefor Display", sans-serif;
+	font-weight: 400;
+	font-size: 12rem;
+	color: rgba(0, 0, 0, 0.5);
+}
 @media (max-width: 768px) {
 	.blog-article {
-		padding-top: 92rem;
+		padding-top: 16rem;
 		padding-bottom: 47rem;
 	}
 	.blog-article .container {
@@ -1915,6 +1949,34 @@ button,
 	.blog-article__content p.font-size {
 		font-size: 16rem;
 		margin-top: 32rem;
+	}
+
+	.breadcrumbs {
+		padding-top: 92rem;
+		padding-bottom: 16rem;
+	}
+	.breadcrumbs__wrap {
+		max-width: 244rem;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.breadcrumbs .container {
+		margin: 0 20rem;
+		width: auto;
+	}
+	.breadcrumbs li {
+		font-size: 10rem;
+	}
+	.breadcrumbs__wrap li:last-child {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.breadcrumbs a {
+		font-size: 10rem;
 	}
 }
 /* blog-article end  */

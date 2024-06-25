@@ -47,14 +47,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const closePopupsBtns = document.querySelectorAll('.closePopupsBtn')
 
-    if(closePopupsBtns.length > 0) {
-        for(let i = 0; closePopupsBtns.length > i; i++) {
-            closePopupsBtns[i].onclick = ()=>{
+    if (closePopupsBtns.length > 0) {
+        for (let i = 0; closePopupsBtns.length > i; i++) {
+            closePopupsBtns[i].onclick = () => {
                 const popups = document.querySelectorAll('.popup')
-                for(let j = 0; popups.length > j; j++) {
+                for (let j = 0; popups.length > j; j++) {
                     popups[j].classList.remove('active')
                 }
-                for(let j = 0; closePopupsBtns.length > j; j++) {
+                for (let j = 0; closePopupsBtns.length > j; j++) {
                     closePopupsBtns[j].classList.remove('active')
                 }
             }
@@ -63,21 +63,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const mashinTextBlock = document.querySelector('#pechatMashin');
 
-    if(mashinTextBlock) {
+    if (mashinTextBlock) {
         var typed = new Typed('#pechatMashin', {
-          strings: ['ЕЖЕМЕСЯЧНАЯ', 'КОМПЛЕКСНАЯ', 'АБОНЕНТСКАЯ'],
-          typeSpeed: 100,
-          loop: true,
-          backSpeed: 20,
+            strings: ['ЕЖЕМЕСЯЧНАЯ', 'КОМПЛЕКСНАЯ', 'АБОНЕНТСКАЯ'],
+            typeSpeed: 100,
+            loop: true,
+            backSpeed: 20,
         });
     }
 
     const formBtns = document.querySelectorAll('.form-btn')
 
-    if(formBtns.length > 0) {
+    if (formBtns.length > 0) {
         const formPopup = document.querySelector('.form-popup')
-        for(let i = 0; formBtns.length > i; i ++) {
-            formBtns[i].onclick = ()=>{
+        for (let i = 0; formBtns.length > i; i++) {
+            formBtns[i].onclick = () => {
                 formPopup.classList.add('active')
                 document.querySelector('.closePopups').classList.add('active')
             }
@@ -85,10 +85,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     const mapBtns = document.querySelectorAll('.map-popup-btn')
 
-    if(mapBtns.length > 0) {
+    if (mapBtns.length > 0) {
         const mapPopup = document.querySelector('.finde-us-popup')
-        for(let i = 0; mapBtns.length > i; i ++) {
-            mapBtns[i].onclick = ()=>{
+        for (let i = 0; mapBtns.length > i; i++) {
+            mapBtns[i].onclick = () => {
                 mapPopup.classList.add('active')
                 document.querySelector('.closePopups').classList.add('active')
             }
@@ -96,10 +96,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     const bigForm = document.querySelectorAll('.big-form-popup-btn')
 
-    if(bigForm.length > 0) {
+    if (bigForm.length > 0) {
         const BigFormPopup = document.querySelector('.big-form-popup')
-        for(let i = 0; bigForm.length > i; i ++) {
-            bigForm[i].onclick = ()=>{
+        for (let i = 0; bigForm.length > i; i++) {
+            bigForm[i].onclick = () => {
                 BigFormPopup.classList.add('active')
                 document.querySelector('.closePopups').classList.add('active')
             }
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let sections = document.querySelector('section');
 
-    if(sections.classList.contains('whiteHead')) {
+    if (sections.classList.contains('whiteHead')) {
         document.querySelector('header').classList.add('white')
     }
 
@@ -120,13 +120,25 @@ document.addEventListener('DOMContentLoaded', () => {
         if (blogItems.length > 0) {
             let showAllBlog = tabContent.querySelector('.blog__more-btn');
             if (blogItems.length > 4) {
-                blogItems[0].classList.add('active');
-                blogItems[1].classList.add('active');
-                blogItems[2].classList.add('active');
-                blogItems[3].classList.add('active');
+                for (let i = 0; i < 4; i++) {
+                    blogItems[i].classList.add('active');
+                }
                 showAllBlog.addEventListener('click', () => {
-                    blogItems.forEach(item => item.classList.add('active'));
-                    showAllBlog.classList.remove('active');
+                    let allActive = true;
+                    blogItems.forEach(item => {
+                        if (!item.classList.contains('active')) {
+                            allActive = false;
+                        }
+                    });
+                    if (allActive) {
+                        for (let i = 4; i < blogItems.length; i++) {
+                            blogItems[i].classList.remove('active');
+                        }
+                        showAllBlog.querySelector('p').textContent = 'Показать еще';
+                    } else {
+                        blogItems.forEach(item => item.classList.add('active'));
+                        showAllBlog.querySelector('p').textContent = 'Скрыть';
+                    }
                 });
             } else {
                 blogItems.forEach(item => item.classList.add('active'));
